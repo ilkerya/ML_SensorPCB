@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BME688_Module
+D Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/downloads
+$ENDCMP
+#
+$CMP RTC_DS3231
+D Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/downloads
+$ENDCMP
+#
+#End Doc Library
