@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L arduino:Arduino_Due_Shield XA2
-U 1 1 620C63F8
-P 6450 8400
-F 0 "XA2" H 6450 6019 60  0000 C CNN
-F 1 "Arduino_Due_Shield" H 6450 5913 60  0000 C CNN
-F 2 "Arduino:Arduino_Due_Shield" H 7150 11150 60  0001 C CNN
-F 3 "https://store.arduino.cc/arduino-due" H 7150 11150 60  0001 C CNN
-	1    6450 8400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Interface_Expansion:TCA9548APWR U1
 U 1 1 620D52C3
 P 8350 3700
@@ -461,11 +450,11 @@ $EndComp
 Text GLabel 11200 1600 0    50   Input ~ 0
 SD7
 Text GLabel 8750 3100 2    50   Input ~ 0
-SDO
+SD0
 Text GLabel 8750 3200 2    50   Input ~ 0
 SC1
 Text GLabel 8750 3000 2    50   Input ~ 0
-SCO
+SC0
 Text GLabel 8750 3400 2    50   Input ~ 0
 SC2
 Text GLabel 8750 3500 2    50   Input ~ 0
@@ -607,7 +596,7 @@ Wire Wire Line
 Wire Wire Line
 	13300 1650 13350 1650
 Text GLabel 11750 3000 0    50   Input ~ 0
-SD4
+SD1
 $Comp
 L power:VCC #PWRVcc0104
 U 1 1 62162BD6
@@ -651,13 +640,13 @@ $EndComp
 Wire Wire Line
 	11650 2700 11800 2700
 Text GLabel 11750 2800 0    50   Input ~ 0
-SC4
+SC1
 Wire Wire Line
 	11800 3000 11750 3000
 Wire Wire Line
 	11750 2800 11800 2800
 Text GLabel 13350 3050 0    50   Input ~ 0
-SD2
+SD3
 $Comp
 L power:VCC #PWRVcc0105
 U 1 1 6216486F
@@ -699,13 +688,13 @@ $EndComp
 Wire Wire Line
 	13250 2750 13400 2750
 Text GLabel 13350 2850 0    50   Input ~ 0
-SC2
+SC3
 Wire Wire Line
 	13400 3050 13350 3050
 Wire Wire Line
 	13350 2850 13400 2850
 Text GLabel 11750 4200 0    50   Input ~ 0
-SD1
+SD5
 $Comp
 L power:VCC #PWRVcc0106
 U 1 1 62167238
@@ -747,13 +736,13 @@ $EndComp
 Wire Wire Line
 	11650 3900 11800 3900
 Text GLabel 11750 4000 0    50   Input ~ 0
-SC1
+SC5
 Wire Wire Line
 	11800 4200 11750 4200
 Wire Wire Line
 	11750 4000 11800 4000
 Text GLabel 13250 4200 0    50   Input ~ 0
-SD0
+SD4
 $Comp
 L power:VCC #PWRVcc0107
 U 1 1 62169230
@@ -768,12 +757,12 @@ $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP12
 U 1 1 62169236
-P 13100 3650
-F 0 "JP12" H 13100 3855 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 13100 3764 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13100 3650 50  0001 C CNN
-F 3 "~" H 13100 3650 50  0001 C CNN
-	1    13100 3650
+P 12900 3400
+F 0 "JP12" H 12900 3605 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 12900 3514 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 12900 3400 50  0001 C CNN
+F 3 "~" H 12900 3400 50  0001 C CNN
+	1    12900 3400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -795,13 +784,13 @@ $EndComp
 Wire Wire Line
 	13150 3900 13300 3900
 Text GLabel 13250 4000 0    50   Input ~ 0
-SC0
+SC4
 Wire Wire Line
 	13300 4200 13250 4200
 Wire Wire Line
 	13250 4000 13300 4000
 Text GLabel 14900 1950 0    50   Input ~ 0
-SD5
+SD0
 $Comp
 L power:VCC #PWRVcc0108
 U 1 1 6216B8EA
@@ -843,13 +832,13 @@ $EndComp
 Wire Wire Line
 	14800 1650 14950 1650
 Text GLabel 14900 1750 0    50   Input ~ 0
-SC5
+SC0
 Wire Wire Line
 	14950 1950 14900 1950
 Wire Wire Line
 	14900 1750 14950 1750
 Text GLabel 14850 3150 0    50   Input ~ 0
-SD3
+SD2
 $Comp
 L power:VCC #PWRVcc0109
 U 1 1 6216E566
@@ -891,7 +880,7 @@ $EndComp
 Wire Wire Line
 	14750 2850 14900 2850
 Text GLabel 14850 2950 0    50   Input ~ 0
-SC3
+SC2
 Wire Wire Line
 	14900 3150 14850 3150
 Wire Wire Line
@@ -1098,4 +1087,50 @@ Wire Wire Line
 	13300 3500 13300 3700
 Wire Wire Line
 	11800 3500 11800 3700
+$Comp
+L power:GND #PWR0127
+U 1 1 6217D8D2
+P 2400 5500
+F 0 "#PWR0127" H 2400 5250 50  0001 C CNN
+F 1 "GND" V 2405 5372 50  0000 R CNN
+F 2 "" H 2400 5500 50  0001 C CNN
+F 3 "" H 2400 5500 50  0001 C CNN
+	1    2400 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR5V0103
+U 1 1 624CFCA8
+P 3750 1400
+F 0 "#PWR5V0103" H 3750 1250 50  0001 C CNN
+F 1 "+5V" H 3765 1573 50  0000 C CNN
+F 2 "" H 3750 1400 50  0001 C CNN
+F 3 "" H 3750 1400 50  0001 C CNN
+	1    3750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 624D09CB
+P 3850 1550
+F 0 "#PWR0128" H 3850 1300 50  0001 C CNN
+F 1 "GND" H 3855 1377 50  0000 C CNN
+F 2 "" H 3850 1550 50  0001 C CNN
+F 3 "" H 3850 1550 50  0001 C CNN
+	1    3850 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 1400 3750 1550
+$Comp
+L Jumper:SolderJumper_2_Open JP14
+U 1 1 625B1467
+P 13100 3650
+F 0 "JP14" H 13100 3855 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 13100 3764 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13100 3650 50  0001 C CNN
+F 3 "~" H 13100 3650 50  0001 C CNN
+	1    13100 3650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
