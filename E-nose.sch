@@ -1122,4 +1122,95 @@ F 3 "~" H 13100 3650 50  0001 C CNN
 	1    13100 3650
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 621805E0
+P 7650 5700
+F 0 "SW1" H 7650 6067 50  0000 C CNN
+F 1 "SW_DIP_x02" H 7650 5976 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile" H 7650 5700 50  0001 C CNN
+F 3 "~" H 7650 5700 50  0001 C CNN
+	1    7650 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 3100 2    50   Input ~ 0
+DIP1
+Text GLabel 5000 3000 2    50   Input ~ 0
+DIP2
+Text GLabel 6550 5600 0    50   Input ~ 0
+DIP1
+Text GLabel 6550 5700 0    50   Input ~ 0
+DIP2
+$Comp
+L power:VCC #PWR?
+U 1 1 6218F374
+P 7950 5600
+F 0 "#PWR?" H 7950 5450 50  0001 C CNN
+F 1 "VCC" H 7965 5773 50  0000 C CNN
+F 2 "" H 7950 5600 50  0001 C CNN
+F 3 "" H 7950 5600 50  0001 C CNN
+	1    7950 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5700 7950 5600
+Connection ~ 7950 5600
+$Comp
+L Device:R R7
+U 1 1 6219B7EA
+P 6700 6100
+F 0 "R7" V 6493 6100 50  0000 C CNN
+F 1 "10K" V 6584 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 6100 50  0001 C CNN
+F 3 "~" H 6700 6100 50  0001 C CNN
+	1    6700 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6219E73C
+P 6700 6250
+F 0 "#PWR?" H 6700 6000 50  0001 C CNN
+F 1 "GND" H 6705 6077 50  0000 C CNN
+F 2 "" H 6700 6250 50  0001 C CNN
+F 3 "" H 6700 6250 50  0001 C CNN
+	1    6700 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5600 6700 5600
+Wire Wire Line
+	6550 5700 7050 5700
+$Comp
+L Device:R R8
+U 1 1 621B2709
+P 7050 6100
+F 0 "R8" V 6843 6100 50  0000 C CNN
+F 1 "10K" V 6934 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6980 6100 50  0001 C CNN
+F 3 "~" H 7050 6100 50  0001 C CNN
+	1    7050 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 5950 6700 5600
+Connection ~ 6700 5600
+Wire Wire Line
+	6700 5600 7350 5600
+Wire Wire Line
+	7050 5950 7050 5700
+Connection ~ 7050 5700
+Wire Wire Line
+	7050 5700 7350 5700
+$Comp
+L power:GND #PWR?
+U 1 1 621BB1B6
+P 7050 6250
+F 0 "#PWR?" H 7050 6000 50  0001 C CNN
+F 1 "GND" H 7055 6077 50  0000 C CNN
+F 2 "" H 7050 6250 50  0001 C CNN
+F 3 "" H 7050 6250 50  0001 C CNN
+	1    7050 6250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

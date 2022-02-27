@@ -754,17 +754,6 @@ F 3 "" H 13300 3500 50  0001 C CNN
 	1    13300 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP12
-U 1 1 62169236
-P 12900 3400
-F 0 "JP12" H 12900 3605 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 12900 3514 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 12900 3400 50  0001 C CNN
-F 3 "~" H 12900 3400 50  0001 C CNN
-	1    12900 3400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	13100 3500 13300 3500
 Connection ~ 13300 3500
@@ -1123,14 +1112,25 @@ $EndComp
 Wire Wire Line
 	3750 1400 3750 1550
 $Comp
-L Jumper:SolderJumper_2_Open JP14
+L Jumper:SolderJumper_2_Open JP12
 U 1 1 625B1467
 P 13100 3650
-F 0 "JP14" H 13100 3855 50  0000 C CNN
+F 0 "JP12" H 13100 3855 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 13100 3764 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13100 3650 50  0001 C CNN
 F 3 "~" H 13100 3650 50  0001 C CNN
 	1    13100 3650
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 621805E0
+P 7050 7250
+F 0 "SW1" H 7050 7617 50  0000 C CNN
+F 1 "SW_DIP_x02" H 7050 7526 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile" H 7050 7250 50  0001 C CNN
+F 3 "~" H 7050 7250 50  0001 C CNN
+	1    7050 7250
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
